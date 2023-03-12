@@ -26,13 +26,8 @@ body {
     box-shadow:0 0 1rem rgba(0,0,0,.3)
 }
 
-.container:hover {
-    color: #3b3b3b;
-
-
-}
-
 .header-wrapper h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 5rem;
 }
 
@@ -45,6 +40,7 @@ input[type=radio] {
     flex-direction: column;
     gap: 2rem;
     width: 90%;
+    cursor: pointer;
 }
 
 .item-panel__wrapper {
@@ -61,7 +57,9 @@ input[type=radio] {
 }
 
 .title-text {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 2.5rem;
+    color: rgb(28, 28, 145);
 }
 
 .tab-content {
@@ -86,13 +84,21 @@ input[type=radio] {
     height: 41rem;
 }
 
+.item-input:checked ~ .item-panel__title .title-text {
+    color: black;
+}
+
+.item-input:hover ~ .item-panel__title .title-text {
+    color: black;
+}
+
 .item-input:checked ~ .item-panel__title .fa {
     transform: rotate(45deg);
 }
 
-.item-input:not(:checked) ~ .item-panel__title .title-text {
+/*.item-input:not(:checked) ~ .item-panel__title .title-text {
     color: white;
-}
+}*/
 
 .meme-label {
     cursor: pointer;

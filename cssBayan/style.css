@@ -61,6 +61,7 @@ input[type=radio] {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 2.5rem;
     color: rgb(28, 28, 145);
+    transition: 1s linear;
 }
 
 .item-image__meme {
@@ -86,18 +87,24 @@ input[type=radio] {
 }
 
 @media (hover:hover) {
-    .item-input:hover ~ .item-panel__title .title-text {
+    .memes-list:hover .item-panel__title .title-text {
         color: black;
     }
 
     .item-panel:hover ~ .item-panel__image .item-image__meme {
         height: 41rem;
-        transition: height 0.3sec ease-in-out;
+        transition: 1s linear;
     }
 
     .item-image__meme:hover {
         height: 41rem;
         transition: height 0.3sec ease-in-out;
+    }
+
+    .memes-list:hover .fa {
+        opacity: 1;
+        transition: 3sec;
+        transition-delay: 0.5s;
     }
 }
 
@@ -111,9 +118,11 @@ input[type=radio] {
 
 .fa.fa-plus-circle {
     font-size: 2.5rem;
+    opacity: 0;
+    transition: 1s linear;
 }
 
-@media only screen and (min-width: 320)  {
+@media (min-width: 320px)  {
     .header-wrapper h1 {
         font-size: 7rem;
     }
@@ -121,7 +130,36 @@ input[type=radio] {
     .container {
         margin: 2rem auto;
         padding: 2rem 0;
-        width: 60rem;
+        width:45rem;
+        gap: 1rem;
+    }
+
+    .memes-list {
+        width: 90%;
+    }
+
+    .title-text {
+        font-size: 3.0rem;
+    }
+
+    .item-image__meme img {
+        width: 80%;
+        margin: 4.5rem 0;
+        transition: height 0.3sec ease-in-out;
+        box-shadow:0 0 1rem rgba(0,0,0,.3)
+    }
+
+}
+
+@media (min-width: 820px)  {
+    .header-wrapper h1 {
+        font-size: 6rem;
+    }
+
+    .container {
+        margin: 2rem auto;
+        padding: 2rem 0;
+        width: 70rem;
         gap: 1rem;
     }
 
@@ -129,11 +167,22 @@ input[type=radio] {
         width: 80%;
     }
 
+    .title-text {
+        font-size: 2.5rem;
+    }
+
+    .item-image__meme img {
+        width: 70%;
+        margin: 1.0rem 0;
+        transition: height 0.3sec ease-in-out;
+        box-shadow:0 0 1rem rgba(0,0,0,.3)
+    }
+
 }
 
-@media only screen and (min-width: 820)  {
+@media (min-width: 1920px)  {
     .header-wrapper h1 {
-        font-size: 6rem;
+        font-size: 5rem;
     }
 
     .container {
@@ -144,27 +193,17 @@ input[type=radio] {
     }
 
     .memes-list {
-        width: 90%;
+        width: 80%;
     }
 
-}
-
-@media only screen and (min-width: 1920)  {
-    .header-wrapper h1 {
-        font-size: 6rem;
+    .title-text {
+        font-size: 2.0rem;
     }
 
-    .container {
-        margin: 2rem auto;
-        padding: 2rem 0;
-        width: 70rem;
-        gap: 1rem;
-    }
-
-    .memes-list {
-        width: 90%;
+    .item-image__meme img {
+        width: 70%;
+        margin: 1.0rem 0;
+        transition: height 0.3sec ease-in-out;
+        box-shadow:0 0 1rem rgba(0,0,0,.3)
     }
 }
-
-
-

@@ -151,7 +151,7 @@ input[type=radio] {
 
     .item-image__meme img {
         width: 80%;
-        margin: 4.5rem 0;
+        margin: 2.0rem 0;
         transition: height 0.3sec ease-in-out;
         box-shadow:0 0 1rem rgba(0,0,0,.3)
     }
@@ -179,7 +179,7 @@ input[type=radio] {
 
     .item-image__meme img {
         width: 70%;
-        margin-top: 3.5rem;
+        margin-top: 1.5rem;
         transition: height 0.3sec ease-in-out;
         box-shadow:0 0 1rem rgba(0,0,0,.3)
     }

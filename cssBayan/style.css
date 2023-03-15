@@ -82,10 +82,16 @@ input[type=radio] {
 @media (hover:hover) {
     .memes-list:hover .item-panel__title .title-text {
         color: black;
+        transition: 1s linear;
     }
 
     .item-panel:hover ~ .item-panel__image .item-image__meme {
         height: 36rem;
+        transition: 1s linear;
+    }
+
+    .item-panel:hover .fa {
+        transform: rotate(45deg);
         transition: 1s linear;
     }
 
@@ -96,8 +102,7 @@ input[type=radio] {
 
     .memes-list:hover .fa {
         opacity: 1;
-        transition: 3sec;
-        transition-delay: 0.5s;
+        transition: 1s linear .5s;
     }
 }
 
@@ -121,7 +126,7 @@ input[type=radio] {
 .fa.fa-plus-circle {
     font-size: 2.5rem;
     opacity: 0;
-    transition: 0.2s linear;
+    transition: 1s linear;
 }
 
 @media (min-width: 320px)  {
@@ -150,7 +155,6 @@ input[type=radio] {
         transition: height 0.3sec ease-in-out;
         box-shadow:0 0 1rem rgba(0,0,0,.3)
     }
-
 }
 
 @media (min-width: 820px)  {
